@@ -9,4 +9,4 @@ i = 0
 end
 
 collection = (1..100).to_a
-my_find([1,2,3,4,5,15]) {|i| i % 3 == 0 && i % 5 == 0 }
+my_find(collection) {|i| i % 3 == 0 && i % 5 == 0 }
