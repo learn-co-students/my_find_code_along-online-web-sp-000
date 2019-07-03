@@ -4,10 +4,8 @@ def my_find(collection)
   found = nil
   i = 0
   while i < collection.length
-    if yield(collection[i])
-      found = collection[i]
-      break
-    end
+    return collection[i] if yield(collection[i])
+  end
 
 
     i = i + 1
