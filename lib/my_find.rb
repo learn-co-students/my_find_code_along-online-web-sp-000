@@ -1,11 +1,9 @@
 require 'pry'
 
- def my_find(array)
-   i = 0
-   while i < array.length 
-        if yield(array[i])
-          return array[i]
-        end
-        i = i + 1
+def my_find(collection)
+  i = 0
+  while i < collection.length
+    return collection[i] if yield(collection[i])
+    i = i + 1
   end
- end
+end
