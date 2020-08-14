@@ -7,7 +7,3 @@ def my_find(collection)
         i += 1
     end
 end
-
-
-
-# ruby bin/my_find
